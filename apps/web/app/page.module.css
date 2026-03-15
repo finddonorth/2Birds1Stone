@@ -1,0 +1,329 @@
+.page {
+  display: grid;
+  gap: 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 0.96;
+  max-width: 10ch;
+}
+
+.lede {
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.captureCard,
+.card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 60px rgba(56, 35, 20, 0.08);
+}
+
+.captureHeader,
+.cardHeader,
+.itemActions,
+.inlineForm,
+.tagChip,
+.inlineFields {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.cardHeader span,
+.itemActions span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.aiBanner,
+.lockCard {
+  margin-top: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  padding: 16px;
+}
+
+.toggleRow {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle,
+.activeToggle,
+.primaryButton,
+.ghostButton {
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  padding: 10px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toggle,
+.ghostButton {
+  background: white;
+  color: var(--ink);
+}
+
+.activeToggle,
+.primaryButton {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--ink);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.checkboxRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+}
+
+.setupForm {
+  display: grid;
+  gap: 12px;
+}
+
+.labelGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fakeInput {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.item,
+.rankRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.itemActionStack {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.rankInfo {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.rankControls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.item p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.metaStack {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.metaLine {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.linkList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.metaLink {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.metaLink:hover {
+  text-decoration: underline;
+}
+
+.emptyState {
+  color: var(--muted);
+}
+
+.attachmentCard {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+}
+
+.attachmentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.fileInput {
+  width: 100%;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  background: white;
+  color: var(--muted);
+}
+
+.helperText {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.attachmentList {
+  display: grid;
+  gap: 10px;
+}
+
+.linkComposer {
+  display: grid;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.attachmentRow {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid var(--line);
+}
+
+.attachmentMeta {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.attachmentActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editorCard {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+}
+
+.inlineForm {
+  margin-top: 12px;
+}
+
+.inlineForm .input {
+  margin-bottom: 0;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tagChip {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid var(--line);
+}
+
+.tagChip button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.item:last-child,
+.rankRow:last-child {
+  border-bottom: 0;
+}
+
+.sectionLabel {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

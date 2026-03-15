@@ -1,0 +1,68 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: min(520px, 100%);
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 252, 247, 0.92);
+  border: 1px solid rgba(23, 33, 43, 0.12);
+  box-shadow: 0 18px 60px rgba(56, 35, 20, 0.08);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #d96b2b;
+  font-size: 0.8rem;
+}
+
+.card h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.95;
+}
+
+.card p {
+  color: #5f6b75;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.input,
+.button,
+.secondaryButton {
+  border-radius: 16px;
+  padding: 14px 16px;
+  font: inherit;
+}
+
+.input {
+  border: 1px solid rgba(23, 33, 43, 0.12);
+  background: white;
+}
+
+.button {
+  border: 0;
+  background: #d96b2b;
+  color: white;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(23, 33, 43, 0.12);
+  background: white;
+  color: #17212b;
+  cursor: pointer;
+}
+
+.message {
+  min-height: 24px;
+}

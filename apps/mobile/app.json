@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "2Birds1Stone",
+    "slug": "2birds1stone",
+    "scheme": "twobirds1stone",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
