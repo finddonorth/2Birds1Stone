@@ -67,7 +67,7 @@ Optional for automated cron-style reminder sending:
 
 - The app can now send reminder emails from `/api/notifications/send`
 - From the web dashboard, use `Send now` in the `Upcoming Reminders` card to test delivery for your workspace
-- Automated delivery is configured for Vercel cron every 15 minutes via [apps/web/vercel.json](/Users/donorth/Documents/App Development/Team Leadership/2Birds1App/apps/web/vercel.json)
+- Automated delivery is configured for Vercel cron once daily at 8:00 AM via [apps/web/vercel.json](/Users/donorth/Documents/App Development/Team Leadership/2Birds1App/apps/web/vercel.json)
 - Scheduled requests should authenticate with `Authorization: Bearer <NOTIFICATION_CRON_SECRET>` and the route also accepts `x-cron-secret` for local/manual testing
 - If your Vercel project root is the repo root, the matching config is also in [vercel.json](/Users/donorth/Documents/App Development/Team Leadership/2Birds1App/vercel.json)
 - Re-run [supabase-mvp.sql](/Users/donorth/Documents/App Development/Team Leadership/2Birds1App/docs/supabase-mvp.sql) so the `notification_deliveries` table exists before testing
